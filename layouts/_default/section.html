@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+{{ partial "single_head.html" . }}
+
+<div id="single_content" class="single-content-left">
+  <div class="single-title">{{ .Title }}</div>
+  <div class="single-subtitle">{{ .Params.subtitle }}</div>
+  {{ .Content }}
+</div>
+
+{{ partial "sitemap.html" . }}
+{{ partial "footer.html" . }}

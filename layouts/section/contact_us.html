@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+{{ partial "single_head.html" . }}
+
+<div class='choke'>
+  <div id="single_content" class="single-content-left thin">
+    <div class="single-title">{{ .Title }}</div>
+    <div class="single-subtitle">{{ .Params.subtitle }}</div>
+    {{ .Content }}
+  </div>
+  <div class="map-column">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.6111747098134!2d-82.48499318528823!3d34.79056258590878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885839f17b5fe381%3A0xaa7c6b95b5429cb9!2s3504+SC-153%2C+Greenville%2C+SC+29611!5e0!3m2!1sen!2sus!4v1489607053759" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class='clearfix'></div>
+</div>
+
+
+{{ partial "sitemap.html" . }}
+{{ partial "footer.html" . }}

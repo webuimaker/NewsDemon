@@ -1,0 +1,49 @@
+{{ partial "header.html" . }}
+{{ partial "single_head.html" . }}
+
+<link rel="stylesheet" href="/css/wraptions.css">
+<script src="/js/jq.wraptions.js"></script>
+<script src="/js/caption.js"></script>
+
+<div class='choke'>
+  <div class='breadcrumb-container'>
+    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+    {{ $.Scratch.Add "path" .Site.BaseURL }}
+    <ol class="breadcrumbs">
+      <li><a href="/">home</a></li>
+      {{ range $index, $element := split $url "/" }}
+      {{ $.Scratch.Add "path" $element }}
+      {{ if ne $element "" }}
+      <li><a href='{{ $.Scratch.Get "path" }}'>{{ . }}</a></li>
+      {{ $.Scratch.Add "path" "/" }}
+      {{ end }}
+      {{ end }}
+    </ol>
+    <div class='clearfix'></div>
+  </div>
+</div>
+
+<div id="single_content" class="single-content-wide">
+  <div id="guide_container">
+
+    <div id="guide_head">
+      <div class="icon">
+        <img src='/img/{{ .Params.icon }}' height=150 width=150>
+      </div>
+      <div class="heading">
+        <span class="title">{{ .Title }}</span>
+        <br>
+        <span class="description">{{ .Description }}</span>
+      </div>
+    </div>
+
+    <div id="guide_post">
+      {{ .Content }}
+    </div>
+
+  </div>
+
+</div>
+
+{{ partial "sitemap.html" . }}
+{{ partial "footer.html" . }}

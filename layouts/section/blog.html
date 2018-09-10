@@ -1,0 +1,53 @@
+{{ partial "header.html" . }}
+{{ partial "single_head.html" . }}
+
+<div id="single_content" class="single-content-wide">
+  <div class="single-title">{{ .Title }}</div>
+  <div class="single-subtitle">{{ .Params.subtitle }}</div>
+
+  <div class='text-center'>
+    {{ .Content }}
+  </div>
+
+  <div id="blog_container" class='container'>
+    <div class="row">
+      <div id="blog_posts" class="col-md-9">
+        {{ range (.Paginator 5).Pages }} {{ .Render "summary" }} {{ end }}
+
+        {{ template "_internal/pagination.html" . }}
+      </div>
+      <div id="blog_nav" class="col-md-3">
+
+        <!-- Sidebar -->
+        <div id="blog_sidebar">
+          <span class='title'><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;&nbsp;Categories</span><br>
+          <ul class="list-unstyled">
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+              <a class="label" href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+            {{ end }}
+          </ul>
+          <hr>
+          <span class='title'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>&nbsp;&nbsp;Tags</span><br>
+          <ul class="list-unstyled">
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+              <a class="label" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+            {{ end }}
+          </ul>
+          <hr>
+          <span class='title'><span class="glyphicon glyphicon-share" aria-hidden="true"></span>&nbsp;&nbsp;Connect, Socialize</span><br>
+          <a href='https://twitter.com/NewsDemon' target="_blank">Twitter</a>
+          <br><a href='#'>Facebook</a>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+{{ partial "sitemap.html" . }}
+{{ partial "footer.html" . }}

@@ -1,0 +1,20 @@
+baseurl = "http://newsdemon.com/"
+title = "NewsDemon"
+languageCode = "en-us"
+DefaultContentLanguage = "en-us"
+defaultContentLanguageInSubdir = "true"	
+
+[languages]
+[languages.en-us]
+	title = "NewsDemon"
+	languageCode = "en-us"
+	languageName = "English"
+	url = "/en-us/"
+
+[languages.fr]
+	title = "NewsDemon"
+	languageName = "French"
+	languageCode = "fr"
+	url = "/fr/"
+	
+	

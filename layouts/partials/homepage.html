@@ -1,0 +1,297 @@
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<script src="/js/homepage.js?rev=20180106001"></script>
+<script src="/js/help_slider.js?rev=20180201001"></script>
+
+<nav id="mobile_navbar" class="navbar navbar-default visible-xs-inline visible-sm-inline hidden-md hidden-lg">
+  <div class="collapse navbar-collapse" id="navbar_main_menu_mobile">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{{ .LanguagePrefix }}/">{{ i18n "menuMain" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/plans">{{ i18n "menuViewPlans" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/support">{{ i18n "menuSupport" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/earn_cash">{{ i18n "menuEarnCash" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/blog">{{ i18n "menuBlog" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/my_account">{{ i18n "menuMyAccount" }}</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="container_welcome" class="container-fluid">
+  <div class="choke">
+    <div id="hamburger_menu_button_container" class="visible-xs-inline visible-sm-inline">
+      <a href="{{ .LanguagePrefix }}#"><span id="hamburger_menu_button" class="glyphicon glyphicon-menu-hamburger visible-xs-inline visible-sm-inline hidden-md hidden-lg" aria-hidden="true" data-toggle="collapse" data-target="#navbar_main_menu_mobile"></span></a>
+    </div>
+
+    <div id="welcome_logo"></div>
+    <div id="welcome_slogan">{{ i18n "welcomeSlogan" }}</div>
+
+    <div id="welcome_demon"></div>
+    <div id="welcome_features">
+      <div class='feature-text'>{{ i18n "welcomeFeatures01" }}</div>
+      <div class='feature-text'>{{ i18n "welcomeFeatures02" }}</div>
+      <div class='feature-text'>{{ i18n "welcomeFeatures03" }}</div>
+    </div>
+
+    <div id="welcome_md_menu">
+      <div class="row hidden-xs hidden-sm visible-md-inline visible-lg-inline">
+        <nav id="desktop_navbar" class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbar_01">
+              <ul class="nav navbar-nav">
+                <li><a href="{{ .LanguagePrefix }}/plans">{{ i18n "menuViewPlans" }}</a></li>
+                <li><a href="{{ .LanguagePrefix }}/support">{{ i18n "menuSupport" }}</a></li>
+                <li><a href="{{ .LanguagePrefix }}/earn_cash">{{ i18n "menuEarnCash" }}</a></li>
+                <li><a href="{{ .LanguagePrefix }}/blog">{{ i18n "menuBlog" }}</a></li>
+                <li><a href="{{ .LanguagePrefix }}/my_account">{{ i18n "menuMyAccount" }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div id="welcome_trial_button">
+      <a href="#"><button type="button" title="Signup Now" class="btn btn-default welcome-trial-button">{{ i18n "buttonStart15DayTrial" }}</button></a>
+    </div>
+
+  </div>
+</div>
+
+<div id="container_promo" class="container-fluid">
+  <div class="choke">
+    <div id="promo_board">
+      <div id='promo_board_title'></div>
+      <div id='promo_board_content'>
+        <div class='price'>{{ i18n "currencySymbol" }}10</div>
+        <div class='desc'>
+          {{ i18n "promoSuperUNL" }}<br>
+          {{ i18n "promoUnlimitedSpeed" }}
+        </div>
+        <div class='features'>
+          + {{ i18n "promoFeatures01" }}<br>
+          + {{ i18n "promoFeatures02" }}<br>
+          + {{ i18n "promoFeatures03" }}
+        </div>
+      </div>
+      <div id='promo_board_links'>
+        <a href="#"><button type="button" title="Start Trial" class="btn btn-default promo-trial-button">{{ i18n "buttonStartTrial" }}</button></a>
+        <br>
+        <a href='{{ .LanguagePrefix }}/#'>{{ i18n "promoViewAllPlans" }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="hr_break_ltblue_arrow" class="container-fluid">
+</div>
+
+<div id="container_features_01" class="container-fluid">
+  <div class="choke">
+    <div id='container_features_01_group'>
+      <div class='feature-block retention'>
+        <span class='title'>{{ i18n "features01TitleRetention" }}</span><br>
+        {{ i18n "features01RetentionA" }} 3078 {{ i18n "features01RetentionB" }}
+      </div>
+      <div class='feature-block speed'>
+        <span class='title'>{{ i18n "features01TitleSpeed" }}</span><br>
+        {{ i18n "features01Speed" }}
+      </div>
+      <div class='feature-block secure'>
+        <span class='title'>{{ i18n "features01TitleSecure" }}</span><br>
+        {{ i18n "features01Secure" }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="container_plans" class="container-fluid">
+  <div class="choke">
+    <div id='plans_header'>
+      <div class='title'>{{ i18n "plansPremiumUsenetPlans" }}</div>
+      <div class='subtitle'>{{ i18n "plansFastReliableSecure" }}</div>
+      <div class='plans_hrule'></div>
+      <div class='features'>3279+ {{ i18n "plansFeaturesA" }}, 50 {{ i18n "plansFeaturesB" }}</div>
+      <div class='plans-title'>{{ i18n "plansStartTrialA" }} <span class='bold'>{{ i18n "plansStartTrialB" }}</span></div>
+    </div>
+
+    <div id='plans_cards'>
+
+      <a href='#'>
+        <div id='plans_card01' class='plans-card'>
+          <div class='title'>
+            <span class='plan_unit'>10GB</span><br>
+            <span class='plan_type'>{{ i18n "plansBlock" }}</span>
+          </div>
+          <div class='desc'>
+            {{ i18n "plansUnlimitedSpeed" }}<br>
+            50 {{ i18n "plansConnections" }}
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}{{ i18n "plansPrice1" }}<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div id='plans_card02' class='plans-card'>
+          <div class='title'>
+            <span class='plan_unit'>100GB</span><br>
+            <span class='plan_type'>{{ i18n "plansRecurringVPN" }}</span>
+          </div>
+          <div class='desc'>
+            {{ i18n "plansUnlimitedSpeed" }}<br>
+            50 {{ i18n "plansConnections" }}
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}{{ i18n "plansPrice2" }}<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div id='plans_card03' class='plans-card'>
+          <div class='title'>
+            <span class='plan_unit'>200GB</span><br>
+            <span class='plan_type'>{{ i18n "plansRecurringVPN" }}</span>
+          </div>
+          <div class='desc'>
+            {{ i18n "plansUnlimitedSpeed" }}<br>
+            50 {{ i18n "plansConnections" }}
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}{{ i18n "plansPrice3" }}<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class='plans_hrule'></div>
+
+    <div id="plans_view_all_button">
+      <a href="#"><button type="button" title="{{ i18n "buttonViewAllNewsDemonPlans" }}" class="btn btn-default plans-view-all-button">{{ i18n "buttonViewAllNewsDemonPlans" }}</button></a>
+    </div>
+
+  </div>
+</div>
+
+<div id="hr_break_horns_01" class="container-fluid">
+  <div class="horns-img"></div>
+</div>
+
+<div id="container_guarantee" class="container-fluid">
+  <div class="choke">
+    <div class='guarantee-box'>
+      <div class='guarantee-badge'><img src='img/md_30day.png'></div>
+      <div class='guarantee-content'>
+        {{ i18n "guaranteeContent01"}} <span class='dark'>{{ i18n "guaranteeContent02"}}</span>
+
+        <div id="guarantee_trial_button">
+          <a href="#"><button type="button" title="{{ i18n "buttonGuaranteeTrial" }}" class="btn btn-default guarantee-trial-button">{{ i18n "buttonGuaranteeTrial" }}</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="container_features_02" class="container-fluid">
+  <div class="choke">
+    <div class='features_02_title'>{{ i18n "features02Title"}}</div>
+    <div class='features_02_content'>
+      {{ i18n "features02Content01"}}
+      <span class='dark'>{{ i18n "features02Content02"}}</span>
+      {{ i18n "features02Content03"}}
+    </div>
+
+    <div class='guarantee-box'>
+      <div class='col'>
+        <div class='orange_check'></div>
+        <hr>{{ i18n "features02BinaryRentention"}}
+        <hr>{{ i18n "features02TextRetention"}}
+        <hr>{{ i18n "features02Completion"}}
+        <hr>{{ i18n "features02AllowedStreams"}}
+      </div>
+      <div class='col'>
+        <div class='orange_check'></div>
+        <hr>{{ i18n "features02UncensoredNewsgroups"}}
+        <hr>{{ i18n "features02Servers"}}
+        <hr>{{ i18n "features02FreeHeaders"}}
+        <hr>{{ i18n "features02UnlimitedAccounts"}}
+      </div>
+      <div class='col'>
+        <div class='orange_check'></div>
+        <hr>{{ i18n "features02256Bit"}}
+        <hr>{{ i18n "features02PaypalAccepted"}}
+        <hr>{{ i18n "features02Debit"}}
+        <hr>{{ i18n "features02WorldPayAccepted"}}
+      </div>
+    </div>
+
+    <div id="features_02_benefits_button" class='hidden-xs hidden-sm'>
+      <a href="{{ .LanguagePrefix }}/#"><button type="button" title="{{ i18n "buttonFeatures02Benefits" }}" class="btn btn-default features-02-benefits-button">{{ i18n "buttonFeatures02Benefits" }}</button></a>
+    </div>
+
+  </div>
+</div>
+
+<div id="hr_break_ltblue" class="container-fluid hidden-xs hidden-sm">
+</div>
+
+<div id="container_reviews" class="container-fluid hidden-xs hidden-sm">
+  <div class="choke">
+    <div class='title'>{{ i18n "reviewsTitle"}}</div>
+    <div class='subtitle'>{{ i18n "reviewsSubtitle"}}</div>
+
+    <div class='card selected'>
+      <div class='icon red'></div>
+      <div class='customer'>James Barlow, Fleetwood, UK</div>
+      <div class='quote'>
+        Just joined today and the difference from my old provider is insane.
+        I am connected with MLPPP where I have very fast download and upload
+        speeds and NewDemons EU server farms can MAX even my connection. WOW!
+      </div>
+    </div>
+
+    <div class='card'>
+      <div class='icon blue'></div>
+      <div class='customer'>P. Doninger, Traverse City, MI</div>
+      <div class='quote'>
+        I had used several different UseNet providers previously and after
+        finally selecting NewsDemon as my permanent provider I am really happy
+        with the speed reliability and retention you provide at such an
+        excellent price. Overall 10/10 for Premium Newsgroup Access!
+      </div>
+    </div>
+
+    <div class='card'>
+      <div class='icon red'></div>
+      <div class='customer'>A.P, London, England</div>
+      <div class='quote'>
+        Never had an issue, been fast reliable and simple to use, not keen on
+        newsrover which is given free but the connection is GREAT!! A+++
+      </div>
+    </div>
+
+    <div class='card'>
+      <div class='icon blue'></div>
+      <div class='customer'>Julien, Perpignan, France</div>
+      <div class='quote'>
+        The best price for the best service, support and innovation. Everytime
+        I was tempted to go somewhere else, they managed to keep me in by
+        getting better and better.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="hr_break_red_arrow" class="container-fluid hidden-xs hidden-sm">
+</div>
+
+<div id="container_trial" class="container-fluid">
+  <div class="choke">
+    <div class='title'>{{ i18n "trialTitle" }}</div>
+    <div id="trial_start_button">
+      <a href="#"><button type="button" title="{{ i18n "buttonTrialStart" }}" class="btn btn-default trial-start-button">{{ i18n "buttonTrialStart" }}</button></a>
+    </div>
+  </div>
+</div>
+
+<div id="hr_break_horns_02" class="container-fluid">
+  <div class="horns-img"></div>
+</div>

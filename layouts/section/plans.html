@@ -1,0 +1,254 @@
+{{ partial "header.html" . }}
+{{ partial "single_head.html" . }}
+
+<script src="/js/jquery.scrollintoview.min.js"></script>
+<script src="/js/plans.js?rev=201804090427001"></script>
+
+<div id="single_content" class="single-content-wide single-content-dark">
+  <div class="single-title">{{ .Title }}</div>
+  <div class="single-subtitle">{{ .Params.subtitle }}</div>
+
+  <div class='text-center'>
+    {{ .Content }}
+  </div>
+
+  <div id="plans_container" class='container'>
+
+    <div id="plans_header">
+      <span class='title'>{{ i18n "plansTitle1" }} <span class='bold'>{{ i18n "plansTitle2" }}</span> {{ i18n "plansTitle3" }}</span>
+      <br>
+      <span class='features'>{{ i18n "plansFeatures" }}</span>
+    </div>
+
+    <div id="plans_controls">
+      <a href="#"><button type="button" title="{{ i18n "buttonPlansMonthly" }}" class="btn btn-default plans-monthly-button">{{ i18n "buttonPlansMonthly" }}</button></a>
+      <a href="#"><button type="button" title="{{ i18n "buttonPlansMultiMonth" }}" class="btn btn-default plans-multi-month-button">{{ i18n "buttonPlansMultiMonth" }}</button></a>
+      <a href="#"><button type="button" title="{{ i18n "buttonPlansBlock" }}" class="btn btn-default plans-block-button">{{ i18n "buttonPlansBlock" }}</button></a>
+    </div>
+
+    <hr>
+
+    <div class="plans-collection monthly">
+      <div class='title'>Monthly Plans</div>
+      <div class='features'></div>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit'>50<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}5.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit'>75<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}6.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit'>100<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}7.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card with-title' data-title='MOST POPULAR'>
+          <div class='title'>
+            <span class='plan-unit-unlimited'>Unlimited</span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}10.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit-unlimited'>Unlimited</span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}10.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit-unlimited'>Unlimited</span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}10.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit-unlimited'>Unlimited</span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}10.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <div class='plans-small-card-blank'></div>
+
+      <div class='clearfix'></div>
+    </div>
+
+    <hr>
+
+    <div class="plans-collection multi-month">
+      <div class='title'>Multi-Month Plans</div>
+      <div class='features'>3279+ Days Retention, 50 Connections, Header Compression, Unlimited Speed, 24/7 Customer Support, Free Headers, Free Posting, Slick VPN Protection</div>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit'>50<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included<br>
+            12 months recurring
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}45.00<span class='duration'></span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit'>200<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included<br>
+            12 months recurring
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}85.00<span class='duration'></span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card'>
+          <div class='title'>
+            <span class='plan-unit-unlimited'>Unlimited</span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included<br>
+            12 months recurring
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}46.00</div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card with-title' data-title='MOST POPULAR'>
+          <div class='title'>
+            <span class='plan-unit-unlimited'>Unlimited</span><br>
+          </div>
+          <div class='desc'>
+            <img src='/img/slick-vpn.png'><br>
+            Protection Included<br>
+            12 months recurring
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}92.00</div>
+        </div>
+      </a>
+
+      <div class='clearfix'></div>
+    </div>
+
+    <hr>
+
+    <div class="plans-collection block">
+      <div class='title'>Block Plans</div>
+      <div class='features'>3279+ Days Retention, 50 Connections, Header Compression, Unlimited Speed, 24/7 Customer Support, Free Headers, Free Posting</div>
+
+      <a href='#'>
+        <div class='plans-small-card short'>
+          <div class='title'>
+            <span class='plan-unit'>10<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>optional text here
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}4.00</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card short'>
+          <div class='title'>
+            <span class='plan-unit'>25<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}7.00</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card short'>
+          <div class='title'>
+            <span class='plan-unit'>50<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}12.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <a href='#'>
+        <div class='plans-small-card short with-title' data-title='MOST POPULAR'>
+          <div class='title'>
+            <span class='plan-unit'>75<span class='unit'>GB</span></span><br>
+          </div>
+          <div class='desc'>
+          </div>
+          <div class='price'>{{ i18n "currencySymbol" }}14.00<span class='duration'>/{{ i18n "abbrMonth" }}</span></div>
+        </div>
+      </a>
+
+      <div class='clearfix'></div>
+    </div>
+
+  </div>
+
+</div>
+
+{{ partial "sitemap.html" . }}
+{{ partial "footer.html" . }}

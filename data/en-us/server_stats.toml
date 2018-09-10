@@ -1,0 +1,6 @@
+newsgroupCount = "110,000"
+
+[retention]
+binary = "1100"
+text = "3000"
+

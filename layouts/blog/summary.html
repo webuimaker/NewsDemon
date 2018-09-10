@@ -1,0 +1,9 @@
+<div class="post">
+    <div class="head">
+        <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+        <span>{{ .Description }}&nbsp;</span> <span class="pull-right hidden-xs">Posted on {{ .Date.Format "Jan 2, 2006 03:04 MST" }}</span>
+        <span class="visible-xs"><small>Posted on {{ .Date.Format "Jan 2, 2006 03:04 MST" }}</small></span>
+    </div>
+    <div class="summary">{{ .Summary }}</div>
+    <a href="{{ .Permalink }}"><button type="button" title="Read More" class="btn btn-default read-more-button"><span class="glyphicon glyphicon-circle-arrow-right read-more-button-icon" aria-hidden="true"></span> <span class="read-more-button-text">Read More</span></button></a>
+</div>

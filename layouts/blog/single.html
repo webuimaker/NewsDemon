@@ -1,0 +1,69 @@
+{{ partial "header.html" . }}
+{{ partial "single_head.html" . }}
+
+<div class='choke'>
+  <div class='breadcrumb-container'>
+    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+    {{ $.Scratch.Add "path" .Site.BaseURL }}
+    <ol class="breadcrumbs">
+      <li><a href="/">home</a></li>
+      {{ range $index, $element := split $url "/" }}
+        {{ $.Scratch.Add "path" $element }}
+          {{ if ne $element "" }}
+          <li><a href='{{ $.Scratch.Get "path" }}'>{{ . }}</a></li>
+          {{ $.Scratch.Add "path" "/" }}
+          {{ end }}
+      {{ end }}
+    </ol>
+    <div class='clearfix'></div>
+  </div>
+</div>
+
+<div id="single_content" class="single-content-wide">
+
+    <div id="blog_container" class='container'>
+    <div class="row">
+
+      <div id="blog_post" class="col-md-9">
+
+        <div>
+          <span class="title">{{ .Title }}</span>
+          <br>
+          <span class="description">{{ .Description }}</span>
+          <span class="post_date pull-right">Posted on {{ .Date.Format "Jan 2, 2006 03:04 MST" }}</span>
+          <hr>
+        </div>
+        {{ .Content }}
+      </div>
+
+      <div id="blog_nav" class="col-md-3">
+
+        <!-- Sidebar -->
+        <div id="blog_sidebar">
+          <span class='title'><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;&nbsp;Categories</span><br>
+          <ul class="list-unstyled">
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+              <a class="label" href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+            {{ end }}
+          </ul>
+          <hr>
+          <span class='title'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>&nbsp;&nbsp;Tags</span><br>
+          <ul class="list-unstyled">
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+              <a class="label" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+              {{ end }}
+          </ul>
+          <hr>
+          <span class='title'><span class="glyphicon glyphicon-share" aria-hidden="true"></span>&nbsp;&nbsp;Connect, Socialize</span><br>
+          <a href='https://twitter.com/NewsDemon' target="_blank">Twitter</a>
+          <br><a href='#'>Facebook</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{{ partial "sitemap.html" . }}
+{{ partial "footer.html" . }}

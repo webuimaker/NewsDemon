@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+{{ partial "single_head.html" . }}
+
+<div id="single_content" class="single-content-center">
+  <div class="single-title">{{ .Title }}</div>
+  <div class="single-subtitle">{{ .Params.subtitle }}</div>
+  {{ .Content }}
+
+  <div id="container_guides" class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 container-guides-col">
+
+        {{ range .Data.Pages }}
+          {{ if in .Params.categories "setup-guides" }}
+            {{ .Render "guide-overview" }}
+          {{ end }}
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+{{ partial "sitemap.html" . }}
+{{ partial "footer.html" . }}

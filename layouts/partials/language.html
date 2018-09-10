@@ -1,0 +1,19 @@
+<div class="col-xs-12 " >
+			<div class="hide">{{ $currentLang := .Site.Language.Lang }}
+			{{ if .IsTranslated }}
+			<h4>{{ i18n "translations" }}</h4>
+			<ul>
+				{{ range .Translations }}
+				<li>
+					<a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+				</li>
+				{{ end}}
+			</ul>
+			{{ end }}
+			</div>
+		<ul class="lang-switch">
+			{{ range $.Site.Home.AllTranslations }}
+			<li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+			{{ end }}
+			</ul>
+		</div>

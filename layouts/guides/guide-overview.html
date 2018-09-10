@@ -1,0 +1,19 @@
+
+<div class="client-software-container">
+  <a href='{{ .Permalink }}'>
+    <div class="client-software-icon">
+      <img src='/img/{{ .Params.icon }}' height=150 width=150>
+    </div>
+    <div class="client-software-platform">
+      {{ range $i, $os := .Params.operatingSystems }}
+        <span class="platform"><img title="{{ $os }}" src='/img/software_platform_{{ $os }}.png' height=32 width=32></span>
+      {{ end }}
+    </div>
+    <div class="client-software-title">
+      {{ .Title }}
+    </div>
+  </a>
+  <div class="client-software-description">
+    {{ .Description }}
+  </div>
+</div>

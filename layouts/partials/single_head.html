@@ -1,0 +1,49 @@
+
+<script src="/js/help_slider.js?rev=20180201001"></script>
+
+<nav id="mobile_navbar" class="navbar navbar-default visible-xs-inline visible-sm-inline hidden-md hidden-lg">
+  <div class="collapse navbar-collapse" id="navbar_main_menu_mobile">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{{ .LanguagePrefix }}/">{{ i18n "menuMain" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/plans">{{ i18n "menuViewPlans" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/support">{{ i18n "menuSupport" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/earn_cash">{{ i18n "menuEarnCash" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/blog">{{ i18n "menuBlog" }}</a></li>
+      <li><a href="{{ .LanguagePrefix }}/my_account">{{ i18n "menuMyAccount" }}</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id='single_head_container'>
+  <div class='choke'>
+    <div id="hamburger_menu_button_container" class="visible-xs-inline visible-sm-inline">
+      <a href="{{ .LanguagePrefix }}#"><span id="hamburger_menu_button" class="glyphicon glyphicon-menu-hamburger visible-xs-inline visible-sm-inline hidden-md hidden-lg" aria-hidden="true" data-toggle="collapse" data-target="#navbar_main_menu_mobile"></span></a>
+    </div>
+
+    <a href='{{ .LanguagePrefix }}/'><div id='single_head_logo'></div></a>
+    <div id="single_head_slogan">AMERICA’S #1 PREMIUM USENET PROVIDER</div>
+
+    <div id="single_head_md_menu">
+      <div class="row hidden-xs hidden-sm visible-md-inline visible-lg-inline">
+        <nav id="desktop_navbar" class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbar_01">
+              <ul class="nav navbar-nav">
+                <li><a href="{{ .LanguagePrefix }}/plans">{{ i18n "menuViewPlans" }}</a></li>
+                <li><a href="{{ .LanguagePrefix }}/support">{{ i18n "menuSupport" }}</a></li>
+                <li><a href="{{ .LanguagePrefix }}/earn_cash">{{ i18n "menuEarnCash" }}</a></li>
+                <li><a href="{{ .LanguagePrefix }}/blog">{{ i18n "menuBlog" }}</a></li>
+                <li><a href="{{ .LanguagePrefix }}/my_account">{{ i18n "menuMyAccount" }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div id="single_head_trial_button" class='hidden-xs hidden-sm visible-md-inline visible-lg-inline'>
+      <a href="#"><button type="button" title="Start 15-day trial" class="btn btn-default single-head-trial-button">Start 15-day trial</button></a>
+    </div>
+
+  </div>
+</div>

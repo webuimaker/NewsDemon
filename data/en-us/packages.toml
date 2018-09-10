@@ -1,0 +1,14 @@
+minConnections = 50
+maxConnections = 150
+
+[package]
+
+[package.pkg01]
+pkgid = "9-13"
+name = "Block"
+downloadLimit = "500 GB"
+downloadLimitUnit = ""
+connections = "50"
+price = "20"
+features = [ "256-bit SSL (TLS1.2)","30 Days Risk Free","VPN Add-on Available" ]
+

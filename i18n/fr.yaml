@@ -1,0 +1,193 @@
+---
+- id: currencySymbol
+  translation: "$"
+- id: abbrMonth
+  translation: mth
+- id: fullMonth
+  translation: mois
+- id: fullDays
+  translation: journées
+- id: menuMain
+  translation: Principale
+- id: menuViewPlans
+  translation: Voir les plans
+- id: menuSupport
+  translation: Soutien
+- id: menuEarnCash
+  translation: Gagner de l'argent
+- id: menuBlog
+  translation: Blog
+- id: menuMyAccount
+  translation: Mon compte
+- id: footerCopyright
+  translation: 2001 - 2018 © Copyright NewsDemon.com. NewsDemon® est une marque commerciale de K & L Technologies, Inc.
+- id: popoutNeedHelp
+  translation: Besoin d'aide pour?
+- id: popoutClickHere
+  translation: Cliquez ici.
+- id: welcomeSlogan
+  translation: "AMERICA’ # 1 PREMIUM USENET PROVIDER"
+- id: welcomeFeatures01
+  translation: 3076+ jours de rétention binaire!
+- id: welcomeFeatures02
+  translation: Accès GRATUIT au VPN!
+- id: welcomeFeatures03
+  translation: Vitesses aveuglantes!
+- id: buttonStart15DayTrial
+  translation: Début du procès de 15 jours
+- id: promoSuperUNL
+  translation: Super UNL + VPN
+- id: promoUnlimitedSpeed
+  translation: Vitesse illimitée!
+- id: promoFeatures01
+  translation: USENET illimité
+- id: promoFeatures02
+  translation: Compte VPN sécurisé (exclusif)
+- id: promoFeatures03
+  translation: 50 connexions SSL (256 bits)
+- id: buttonStartTrial
+  translation: Commencer procès
+- id: promoViewAllPlans
+  translation: Voir tous les plans
+- id: features01TitleRetention
+  translation: Rétention fiable
+- id: features01TitleSpeed
+  translation: Vitesse illimitée
+- id: features01TitleSecure
+  translation: Garantir. Privé.
+- id: features01RetentionA
+  translation: La rétention des groupes de discussion est une mesure de la durée pendant laquelle un article donné reste actif sur notre serveur de nouvelles pour que vous puissiez y accéder. Actuellement, nous sommes en train de spouler à
+- id: features01RetentionB
+  translation: jours de rétention dans les groupes de discussion binaires et n'expirent pas les newsgroups de texte!
+- id: features01Speed
+  translation: NewsDemon Newsgroups offre l'accès USENET le plus rapide, que vous ayez une connexion 5 Mbps ou 1000 Mbps. Avec des serveurs aux États-Unis et en Europe, NewsDemon fournit un accès aux groupes de discussion non restreint via des connexions serveur 256 bits SECURE.
+- id: features01Secure
+  translation: NewsDemon Newsgroups fournit des connexions cryptées SSL 256 bits. Nous ne partagerons jamais vos informations avec des tiers ou ne suivrons votre utilisation que si cela est requis par la loi. Nous ne menacerons pas d'augmenter les prix pour vous inciter à nous rejoindre, nous apprécions votre intelligence.
+- id: plansPremiumUsenetPlans
+  translation: Plans Usenet Premium
+- id: plansFastReliableSecure
+  translation: Vite. Fiable. Garantir.
+- id: plansFeaturesA
+  translation: Jours de rétention
+- id: plansFeaturesB
+  translation: Connexions, compression d'en-tête, vitesse illimitée, assistance clientèle 24/7, en-têtes gratuits, publication gratuite, protection VPN Slick
+- id: plansStartTrialA
+  translation: Commencez votre
+- id: plansStartTrialB
+  translation: Essai de 15 jours
+- id: plansBlock
+  translation: bâtiment
+- id: plansUnlimitedSpeed
+  translation: Vitesse illimitée
+- id: plansConnections
+  translation: Les liaisons
+- id: plansRecurringVPN
+  translation: Récurrent + VPN
+- id: plansPrice1
+  translation: "2.50"
+- id: plansPrice2
+  translation: "7.00"
+- id: plansPrice3
+  translation: "8.00"
+- id: guaranteeContent01
+  translation: Nous aimerions penser que nous sommes à la hauteur avec chaque client en offrant une expérience de navigation exceptionnelle, mais les choses ne se passent pas toujours ainsi. Donc, si vous décidez de ne pas rester,
+- id: guaranteeContent02
+  translation: newsdemon vous offre une garantie de remboursement de 30 jours. Alors qu'est-ce que tu attends?
+- id: features02Title
+  translation: toutes les fonctionnalités que vous pourriez demander
+- id: features02Content01
+  translation: Avec
+- id: features02Content02
+  translation: connexions de peering direct
+- id: features02Content03
+  translation: entre le Royaume - Uni et notre parc de serveurs européen, nos clients aux États - Unis et en Europe connaîtront les mêmes vitesses rapides que celles que nous offrons à nos clients américains.
+- id: features02BinaryRentention
+  translation: "Rétention binaire: jusqu'à 3286 jours"
+- id: features02TextRetention
+  translation: "Conservation du texte: 3286 jours"
+- id: features02Completion
+  translation: "Achèvement: 99% +"
+- id: features02AllowedStreams
+  translation: "Streams autorisés: 50"
+- id: features02UncensoredNewsgroups
+  translation: "Groupes de discussion non censurés: 107 000+"
+- id: features02Servers
+  translation: "Serveurs: États-Unis, Europe"
+- id: features02FreeHeaders
+  translation: En-têtes gratuits
+- id: features02UnlimitedAccounts
+  translation: Comptes illimités
+- id: features02256Bit
+  translation: Accès crypté à 256 bits
+- id: features02PaypalAccepted
+  translation: Paypal ™ accepté
+- id: features02Debit
+  translation: Débit UK / EU / USA
+- id: features02WorldPayAccepted
+  translation: Worldpay accepté
+- id: reviewsTitle
+  translation: qui parle
+- id: reviewsSubtitle
+  translation: Des clients satisfaits dans le monde entier aiment News Demon.
+- id: trialTitle
+  translation: Prêt pour l'expérience d'usenet la plus rapide et la plus fiable?
+- id: buttonViewAllNewsDemonPlans
+  translation: Voir tous les plans de NewsDemon
+- id: buttonGuaranteeTrial
+  translation: Commencez votre essai NewsDemon
+- id: buttonFeatures02Benefits
+  translation: Découvrez tous les avantages d'être membre!
+- id: buttonTrialStart
+  translation: Commencez votre essai de 15 jours
+- id: sitemapWhatIsNewsDemon
+  translation: Qu'est-ce que News Demon
+- id: sitemapMemberBenefits
+  translation: Avantages pour les membres
+- id: sitemapAdvantages
+  translation: Avantages
+- id: sitemapNewsgroupRetention
+  translation: Conservation des groupes de discussion
+- id: sitemapUsenetTerms
+  translation: Termes Usenet
+- id: sitemapHistoryOfUsenetNewsgroups
+  translation: Histoire des newsgroups Usenet
+- id: sitemapBlog
+  translation: Blog
+- id: sitemapAffiliates
+  translation: Affiliés
+- id: sitemapDMCA
+  translation: DMCA
+- id: sitemapPrivacyPolicy
+  translation: Politique de confidentialité
+- id: sitemapTermsAndConditions
+  translation: Termes et conditions
+- id: sitemapSitemap
+  translation: Plan du site
+- id: sitemapSupportFAQs
+  translation: Support et FAQ
+- id: sitemapContactUs
+  translation: Contactez nous
+- id: sitemapServerStatus
+  translation: Statut du serveur
+- id: sitemapReportAbuse
+  translation: Signaler un abus
+- id: sitemapWhatIsANewsReader
+  translation: Qu'est-ce qu'un lecteur de nouvelles?
+- id: sitemapNewsbinProGuide
+  translation: Guide de Newsbin Pro
+- id: sitemapNewsleecherGuide
+  translation: Guide Newsleecher
+- id: plansTitle1
+  translation: Votre
+- id: plansTitle2
+  translation: Essai de 15 jours
+- id: plansTitle3
+  translation: "comprend:"
+- id: plansFeatures
+  translation: "3279+ jours de rétention, 50 connexions, compression d'en-tête, vitesse illimitée, assistance clientèle 24/7, en-têtes gratuits, publication gratuite, protection VPN lisse"
+- id: buttonPlansMonthly
+  translation: Mensuel
+- id: buttonPlansMultiMonth
+  translation: Multi-mois
+- id: buttonPlansBlock
+  translation: Bloc
