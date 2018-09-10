@@ -1,4 +1,4 @@
-baseurl = "http://newsdemon.com/"
+baseurl = "/"
 title = "NewsDemon"
 languageCode = "en-us"
 DefaultContentLanguage = "en-us"
